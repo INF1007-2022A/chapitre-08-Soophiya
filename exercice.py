@@ -36,7 +36,19 @@ def compare_docs(doc1,doc2):
             print("The documents are identical")
     return 
 
-def 
+def add_letter_grade():
+
+    #for every line in a file, add a letter grade based on the percentage on the same line 
+
+    with open('notes.txt', 'n') as f1, open('notes_avec_lettres.txt', 'w') as f2:
+        for line in f1:
+            if line == "":
+                continue
+            else:
+                for key, value in PERCENTAGE_TO_LETTER.items():
+                    if value[0] <= int(line) < value[1]:
+                        f2.write(line + " " + key + "\n")
+    return
 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
