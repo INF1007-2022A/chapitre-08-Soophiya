@@ -9,6 +9,15 @@ PERCENTAGE_TO_LETTER = {"A*": [95, 101], "A": [90, 95], "B+": [85, 90], "B": [80
 
 # TODO: Définissez vos fonction ici
 
+def triple_spaces(doc3):
+
+    #copy a text file and replace every space with three spaces
+
+    with open(doc3, "r") as f1, open("doc3.txt", "w") as f2:
+        for line in f1:
+            f2.write(line.replace(" ", "   "))
+    print("The file has been copied and modified")
+    return
 
 
 def compare_docs(doc1,doc2):
@@ -25,6 +34,9 @@ def compare_docs(doc1,doc2):
                 break
         else:
             print("The documents are identical")
+    return 
+
+def 
 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
