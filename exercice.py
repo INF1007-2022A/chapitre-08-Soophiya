@@ -52,5 +52,7 @@ def add_letter_grade():
 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
-
+    triple_spaces("doc1.txt")
+    compare_docs("doc1.txt", "doc2.txt")
+    add_letter_grade()
     pass
